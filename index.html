@@ -7,11 +7,10 @@ function myFunction() {
   let x = document.getElementById("numb").value;
   let text;
   if (isNaN(x) || x < 1 || x > 10) {
-    text = "Input not valid";
+    alert("Input not valid");
   } else {
-    text = "Input OK";
+    alert("Input OK");
   }
-  document.getElementById("demo").innerHTML = text;
 }
 </script>
 </head>
@@ -21,6 +20,6 @@ function myFunction() {
 <p>Please input a number between 1 and 10:</p>
 <input id="numb">
 <button type="button" onclick="myFunction()">Submit</button>
-<p id="demo"></p>
 </body>
 </html> 
+ 
